@@ -1,0 +1,58 @@
+:root {
+
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style: none;
+}
+
+
+header {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: blueviolet;
+    margin: 0%;
+    width: 100%;
+}
+
+body {
+    background-color: #4b4b4b;
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    text-align: left;
+    background-color: blueviolet;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+section h2 {
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: blueviolet;
+    margin: 0px;
+}
+
+section ul {
+    border-left: blueviolet solid;
+}
+ section p {
+    border-left: blueviolet solid;
+ }
