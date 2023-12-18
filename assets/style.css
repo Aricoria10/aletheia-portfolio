@@ -10,49 +10,94 @@
 
 header {
     display: flex;
-    flex: auto;
     align-items: center;
     justify-content: space-between;
-    padding: 1%;
     background-color: blueviolet;
-    margin: 0%;
+}
+
+.background-image {
+    height: 600px;
     width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./images/pexels-luis-gomes-546819.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 body {
     background-color: #4b4b4b;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
-h1 {
-    text-align: left;
-    background-color: blueviolet;
+h1, footer h2 {
+    margin: 10px;
 }
 
-nav ul {
+nav ul, footer ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
+    margin: 10px;
+}
+
+section {
+    align-content: flex-start;
 }
 
 section h2 {
     text-align: left;
+    margin: 20px;
+}
+
+section ul, section p {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
 }
 
 footer {
     display: flex;
     flex: auto;
     align-items: center;
+    margin-top: 2%;
     justify-content: space-between;
-    padding: 1%;
     background-color: blueviolet;
-    margin: 0px;
 }
 
 section ul {
     border-left: blueviolet solid;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
 }
  section p {
     border-left: blueviolet solid;
+ }
+
+ .li {
+    display: inline-flex;
+ }
+
+.class-main-image {
+    margin: auto;
+    content: surf report;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 50%;
+ }
+
+.class-other-image {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 36%;
+    height: 30%;
  }
