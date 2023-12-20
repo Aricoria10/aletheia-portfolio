@@ -10,7 +10,7 @@ N/A
 
 ## Screenshot
 
-![alt text](./assets/images/2023-12-19.png)
+```![alt text](./assets/images/2023-12-19.png)```
     
 
 ## Credits
