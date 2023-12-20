@@ -84,8 +84,11 @@ h2 section {
 }
 
 .small-image:hover {
-    background-color: aliceblue;
-    color: aliceblue;
+    opacity: 0.2;
+}
+
+.main-image:hover {
+    opacity: 0.2;
 }
 
 .section-row {
