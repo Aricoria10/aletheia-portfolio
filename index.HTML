@@ -5,43 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <title>aletheia-portfolio</title>
+    <title>Aletheia-portfolio</title>
 </head>
 
 <header>
     <h1>Aletheia</h1>
     <nav>
         <ul>
-            <li>About Me</li>
-            <li>Work</li>
-            <li>Contact Me</li>
-            <li>Resume</li>
+            <li><a href="#About Me">About Me</a></li>
+            <li><a href="#Work">Work</a></li>
+            <li><a href="#Contact Me">Contact Me</a></li>
+            <li><a href="#">Resume</a></li>
         </ul>
     <nav></nav>
 </header>
 
 <body>
-    <section class="background-image"><h2 class="background-text">Cool subtitle here</h2></section>
+    <section class="background-image"><h2 class="background-image-text">Cool subtitle here</h2></section>
     <section>
-        <h2>About Me</h2>
+        <h2 id="About Me">About Me</h2>
             <p> A paragraph or two about me.</p> 
     </section>
     <section>
-        <h2>Work</h2>
-        <div><div class="main-inner-text">surf report</div><img src="./assets/images/pexels-designecologist-1779487.jpg" class="class-main-image" alt="surf report"></div>
-        <ul>
-            <li><div class="inner-text">LED Wall</div><img src="./assets/images/pexels-pixabay-414860.jpg" class="class-other-image" alt="LED wall"> </li>
-            <li><div class="inner-text">Calculator</div><img src="./assets/images/pexels-athena-2582937.jpg" class="class-other-image" alt="Calculator"> </li>
-            <li><div class="inner-text">Pastel Puzzels</div><img src="./assets/images/pexels-rovenimagescom-949587.jpg" class="class-other-image" alt="pastel"> </li>
-            <li><div class="inner-text">Buddy</div><img src="./assets/images/pexels-abet-llacer-919734.jpg" class="class-other-image" alt="run buddy"></li>
-        </ul>
+        <h2 id="Work">Work</h2>
+            <section>
+                <section class="section-column">
+                    <img src="./assets/images/pexels-designecologist-1779487.jpg" class="main-image" alt="surf report">
+                    <div class="body-image-text">Surf report </div>
+                </section>
+                <section class="section-row"> 
+                    <section class="section-width">
+                        <img src="./assets/images/pexels-pixabay-414860.jpg" class="small-image" alt="LED wall"><div class="body-image-text">LED Wall</div>
+                    </section>
+                    <section class="section-width">
+                        <img src="./assets/images/pexels-athena-2582937.jpg" class="small-image" alt="Calculator"><div class="body-image-text">Calculator</div>
+                    </section>
+                    <section class="section-width">
+                        <img src="./assets/images/pexels-rovenimagescom-949587.jpg" class="small-image" alt="pastel"><div class="body-image-text">Pastel Puzzels</div>
+                    </section>
+                    <section class="section-width">
+                        <img src="./assets/images/pexels-abet-llacer-919734.jpg" class="small-image" alt="run buddy"><div class="body-image-text">Buddy</div>
+                    </section>
+                </section>
+            </section>
     </section>
     <footer>
-        <h2>Contact Me</h2>
+        <h2 id="Contact Me">Contact Me</h2>
         <ul>
-            <li>Phone number</li>
-            <li>Email</li>
-            <li>github</li>
+            <li><a href="tel:+1(321)347-6510">Phone number</a></li>
+            <li><a href="mailto:empresskitsune10@gmail.com">Email</a></li>
+            <li><a href="https://github.com/Aricoria10">github</a></li>
          </ul>
     </footer>   
 </body>

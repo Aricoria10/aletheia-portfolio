@@ -8,20 +8,20 @@
 }
 
 
-header {
+header, footer {
     display: flex;
     align-items: center;
+    padding: 10px;
     justify-content: space-between;
     background-color: blueviolet;
 }
 
 .background-image {
-    height: 600px;
-    width: 100%;
+    display: flex;
+    height: 40vh;
     margin-bottom: 25px;
     background-image: url("./images/pexels-luis-gomes-546819.jpg");
     background-size: cover;
-    background-position: center;
 }
 
 body {
@@ -33,7 +33,13 @@ body {
 }
 
 h1, footer h2 {
+    display: flex;
+    align-items: flex-start;
     margin: 10px;
+}
+section {
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul, footer ul {
@@ -43,77 +49,72 @@ nav ul, footer ul {
     margin: 10px;
 }
 
-section {
-    align-content: flex-start;
-}
-
 section h2 {
     text-align: left;
     margin: 20px;
 }
 
-section ul, section p {
-    display: flex;
+section p {
     flex: auto;
     flex-wrap: wrap;
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
 }
 
-footer {
+h2 section {
+    display: flex;
+}
+
+.main-image {
     display: flex;
     flex: auto;
-    margin-top: 2%;
-    justify-content: space-between;
-    background-color: blueviolet;
+    width: 800px;
+    height: 800px;
+    align-items: center;
+    border: blueviolet solid;
 }
 
-div {
+.small-image {
     display: flex;
-    flex-direction: column;
+    flex: auto;
+    height: 400px;
+    width: 400px;
+    flex-wrap: wrap;
+    border: blueviolet solid;
 }
 
-.class-main-image {
-    margin: auto;
+.small-image:hover {
+    background-color: aliceblue;
+    color: aliceblue;
+}
+
+.section-row {
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 1600px;
-    max-height: 1000px;
-    border: blueviolet solid;
- }
+}
 
-.class-other-image {
-    object-fit: fill;
-    margin: auto;
-    width: 750px;
-    max-width: 800px;
-    height: 350px;
-    max-height: 500px;
-    border: blueviolet solid;
- }
+.section-width {
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
 
-.inner-text {
+.section-column {
+    flex-direction: column;
+    align-items: center;
+}
+
+.background-image-text {
     width: fit-content;
-    position: relative;
-    left: 2px;
-    bottom: -335px;
+    align-content: right;
+    justify-content: flex-end;
     background-color: blueviolet;
 }
 
-.main-inner-text {
-    width: fit-content;
-    position: relative;
-    right: -70%;
-    bottom: -20%;
-    background-color: blueviolet;
-}
-
-.background-text {
-    width: fit-content;
-    position: relative;
-    right: -85%;
-    bottom: -500px;
+.body-image-text {
+    align-items: flex-end;
+    justify-content: flex-end;
     background-color: blueviolet;
 }
