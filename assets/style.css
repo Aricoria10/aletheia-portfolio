@@ -1,5 +1,5 @@
 :root {
-
+    --purple: blueviolet;
 }
 
 * {
@@ -13,9 +13,10 @@ header, footer {
     align-items: center;
     padding: 10px;
     justify-content: space-between;
-    background-color: blueviolet;
+    background-color: var(--purple);
 }
 
+/* this is the class for the background images*/
 .background-image {
     display: flex;
     height: 40vh;
@@ -35,13 +36,14 @@ body {
 h1, footer h2 {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     margin: 10px;
 }
 section {
     display: flex;
     flex-direction: column;
 }
-
+/*proper spacing for nav and footer*/
 nav ul, footer ul {
     display: flex;
     justify-content: space-between;
@@ -55,14 +57,22 @@ section h2 {
 }
 
 section p {
+    display: flex;
     flex: auto;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: auto;
 }
 
 h2 section {
     display: flex;
+}
+
+.profile-pic {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 1%;
+    margin: auto;
 }
 
 .main-image {
@@ -71,7 +81,7 @@ h2 section {
     width: 800px;
     height: 800px;
     align-items: center;
-    border: blueviolet solid;
+    border: var(--purple) solid;
 }
 
 .small-image {
@@ -80,9 +90,9 @@ h2 section {
     height: 400px;
     width: 400px;
     flex-wrap: wrap;
-    border: blueviolet solid;
+    border: var(--purple) solid;
 }
-
+/*learned hover for images need opacity, not color*/
 .small-image:hover {
     opacity: 0.2;
 }
@@ -108,20 +118,20 @@ h2 section {
     flex-direction: column;
     align-items: center;
 }
-
+/*text boxes for words along with image*/
 .background-image-text {
     width: fit-content;
     align-content: right;
     justify-content: flex-end;
-    background-color: blueviolet;
+    background-color: var(--purple);
 }
 
 .body-image-text {
     align-items: flex-end;
     justify-content: flex-end;
-    background-color: blueviolet;
+    background-color: var(--purple);
 }
-
+/*sizes changes for when different screens look at the website*/
 @media screen and (max-width: 768px) {
     .small-image {
       flex: 0 0 50%;
@@ -136,10 +146,7 @@ h2 section {
 }
 
 @media screen and (max-width: 992px) {
-    /* header {
-      width: 75%;
-    }
-   */
+
     .small-image {
       flex: 0 0 33.333%;
       max-width: 33.333%;
